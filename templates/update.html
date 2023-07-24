@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+{% block content%}
+<boby>
+    <form method="post">
+        <p>
+            <label for="title">Title</labe>
+            <input type="text" name="title" vaule="{{post.title}}"></input>
+        </p>
+        <p>
+            <label for="content">Content</label>
+            <input type="text" name="content" valuve="{{post.content}}"></input>
+        </p>
+        <div>
+            <button type="sumbit">Update</button>
+        </div>
+    </form>
+    {% endblock %}

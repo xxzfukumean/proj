@@ -1,0 +1,25 @@
+{%extends "base.html"%}
+{% block content %}
+{% with message = get_flashed_messages()%}
+{% if message %} 
+{% if message%} 
+    <div> class = "notification is danger"</div>
+         <a>{{messages[0] }}</a>
+</div>
+{% endif %}
+{% endif %}
+{% endwith%}
+    <form method="POST" acrion="/login">
+        <div class="filed">
+            <input class = "input is-large"type="email" name="email" placeholder="Your Email">
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <input class="input is-large" type="password" name="password" placeholder="Your Password">
+        </div>
+    </div>
+    <button class="button is-block is-info is-large is-fullwidth">Login</button>
+</form>
+{% endblock %}  
